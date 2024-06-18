@@ -16,7 +16,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'go test ./... -coverprofile=coverage.txt' //Running go command defined previously
-                sh 'curl -s https://codecov.io/bash | bash -s -'
+                //sh 'curl -s https://codecov.io/bash | bash -s -'s
             }
         }
         stage('Code Analysis') {
