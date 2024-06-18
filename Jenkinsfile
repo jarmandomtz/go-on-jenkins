@@ -1,4 +1,4 @@
-@Library('jenkins-standard-go-pipeline')
+@Library('jenkins-standard-go-pipeline') _
 
 standard()
 
