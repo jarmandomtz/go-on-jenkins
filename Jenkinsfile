@@ -9,6 +9,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'go mod init' //go: cannot find main module, but found .git/config in /home/armando/.jenkins/workspace/Java-projects/go-pipeline
                 sh 'go build' //Running go command defined previously
             }
         }
