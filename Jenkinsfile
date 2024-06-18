@@ -1,4 +1,8 @@
-pipeline {
+@Library('jenkins-standard-go-pipeline')
+
+standard()
+
+/*pipeline {
     agent any //all agents
     tools {
         //go 'go-1.22.4' //Installed latest version 
@@ -37,4 +41,4 @@ pipeline {
             }
         }
     }
-}
+}/*
