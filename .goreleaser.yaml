@@ -1,7 +1,16 @@
 # .goreleaser.yaml
+project_name: go-on-jenkins
 builds:
-  - main: ./go-on-jenkins
-    id: "go-on-jenkins"
-    binary: go-on-jenkins
+  - env: [CGO_ENABLED=0]
     goos:
       - linux
+    goarch:
+      - amd64
+nfpms:
+- maintainer: Armando Martinez <armando.martinez.esausi@gmail.com>
+  description: Sample project.
+  homepage: https://github.com/jarmandomtz/go-on-jenkins
+  license: MIT
+  formats:
+  - deb
+  - rpm
